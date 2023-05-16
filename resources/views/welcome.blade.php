@@ -17,7 +17,9 @@
         'vote' => \App\Models\Vote::find('vote')
         ]) -->
 
-    @livewire('add-product')
+    <!-- @livewire('add-product') -->
+
+    @livewire('multi-step')
 
 
     @livewireScripts
