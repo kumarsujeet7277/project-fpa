@@ -32,4 +32,16 @@ class Post extends Model
     {
         return $this->votes()->one()->where('user_id', auth()->id());
     } 
+
+
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class)->whereNull('parent_id');
+    }
+
+    public function AllCommentsCount()
+    {
+        return $this->hasMany(Comment::class)->count();
+    }
 }

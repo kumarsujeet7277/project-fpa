@@ -17,4 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/post-comment', function(){
+    return view('post-cmt');
+});
 
