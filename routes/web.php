@@ -25,3 +25,7 @@ Route::get('/quiz-question', function(){
     return view('quiz-question-ask');
 });
 
+
+Route::get('/pagination',function(){
+    return view('pagination-view');
+});
