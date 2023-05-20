@@ -21,3 +21,7 @@ Route::get('/post-comment', function(){
     return view('post-cmt');
 });
 
+Route::get('/quiz-question', function(){
+    return view('quiz-question-ask');
+});
+
