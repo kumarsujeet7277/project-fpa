@@ -9,20 +9,23 @@ use Livewire\WithPagination;
 class Pagination extends Component
 {
     // public $countries;
+    
     use WithPagination;
     protected $paginationTheme = 'bootstrap';
+    public $amount = 5;
 
-    public function mount()
-    {
-        // $this->countries = Country::paginate(10);
-        
-    }
+  
     
     public function render()
     {
-        return view('livewire.pagination', [
-            'countries' => Country::paginate(5),
-        ]);
+        $countries = Country::take($this->amount)->get();
+
+        return view('livewire.pagination', compact('countries'));
+    }
+
+    public function load()
+    {
+        $this->amount += 10;
     }
 
 }

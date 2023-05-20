@@ -16,10 +16,12 @@
                                 <td>{{ $country->name }}</td>
                             </tr>
                         @endforeach
-
-                        {{ $countries->links() }}
+                          
+                    
                     </tbody>
                 </table>
+                <a wire:click.prevent="load" href="" class="btn btn-primary">Load more...</a>
+                    
             </div>
         </div>
     </div>
