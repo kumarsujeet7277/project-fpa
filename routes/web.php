@@ -34,3 +34,8 @@ Route::get('/pagination',function(){
 Route::get('/multi-selection', function(){
     return view('multi-select');
 });
+
+
+Route::get('/star-rating', function(){
+    return view('star-rating');
+});
