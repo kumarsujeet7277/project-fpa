@@ -29,3 +29,8 @@ Route::get('/quiz-question', function(){
 Route::get('/pagination',function(){
     return view('pagination-view');
 });
+
+
+Route::get('/multi-selection', function(){
+    return view('multi-select');
+});
