@@ -39,3 +39,8 @@ Route::get('/multi-selection', function(){
 Route::get('/star-rating', function(){
     return view('star-rating');
 });
+
+
+Route::get('/chat-room', function(){
+    return view('chat-room-component');
+});
