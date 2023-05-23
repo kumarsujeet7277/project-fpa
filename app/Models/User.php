@@ -21,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'active',
     ];
 
     /**
@@ -62,5 +63,9 @@ class User extends Authenticatable
     public function messages()
     {
         return $this->hasMany(Messsage::class);
+    }
+    public function active()
+    {
+        return $this->hasOne(Active::class);
     }
 }

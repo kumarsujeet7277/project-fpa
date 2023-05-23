@@ -44,3 +44,7 @@ Route::get('/star-rating', function(){
 Route::get('/chat-room', function(){
     return view('chat-room-component');
 });
+
+Route::get('/toggle-switch', function(){
+    return view('toggle-switch-component');
+});
