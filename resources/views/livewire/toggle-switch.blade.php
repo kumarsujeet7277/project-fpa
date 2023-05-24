@@ -24,14 +24,17 @@
                 <td>{{$user->name}}</td>
                 <td>{{$user->email}}</td>
                 <td>
+                    <!-- <div class="form-check form-switch">
+                        <input wire:click.prevent="activeUser({{ $user->id }})" wire:model="active"  id="flexSwitchCheckDefault"  class="form-check-input" role="switch" type="checkbox"  @if ($user->active == true) checked  @endif />
+                    </div> -->
                     <div class="form-check form-switch">
-                        <input wire:click.prevent="activeUser({{ $user->id }})" wire:model="active"  class="form-check-input" role="switch" type="checkbox"  @if ($user->active == true) checked  @endif />
+                        <input  wire:click="activeUser({{ $user->id }})"  class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"  @if ($user->active == true) checked  @endif >
                     </div>
 
                 </td>
             </tr>
             @endforeach
-        </tbody>
+        </tbody> 
     </table>
         </div>
     </div>

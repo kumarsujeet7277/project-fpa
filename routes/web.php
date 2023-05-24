@@ -48,3 +48,7 @@ Route::get('/chat-room', function(){
 Route::get('/toggle-switch', function(){
     return view('toggle-switch-component');
 });
+
+Route::get('/sweet-alert', function(){
+    return view('sweet-alert-dialogs');
+});
