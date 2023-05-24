@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Post::factory(5)->create();
         \App\MOdels\Question::factory(5)->create();
         \App\MOdels\Category::factory(5)->create();
+        \App\MOdels\Drag::factory(5)->create();
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',

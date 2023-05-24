@@ -52,3 +52,7 @@ Route::get('/toggle-switch', function(){
 Route::get('/sweet-alert', function(){
     return view('sweet-alert-dialogs');
 });
+
+Route::get('/drag-drop', function(){
+    return view('drag-drop-table');
+});
