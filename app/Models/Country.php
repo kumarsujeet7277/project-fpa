@@ -24,4 +24,14 @@ class Country extends Model
     {
         return $this->hasMany(Passenger::class);
     }
+
+    public function tournaments()
+    {
+        return $this->hasMany(Tournament::class);
+    }
+
+    public function country_tournaments()
+    {
+        return $this->hasMany(CountryTournament::class);
+    }
 }

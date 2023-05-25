@@ -60,3 +60,7 @@ Route::get('/drag-drop', function(){
 Route::get('/create-fly', function(){
     return view('create-on-fly');
 });
+
+Route::get('/unique-dropdown', function(){
+    return view('unique-dropdown-component');
+});
