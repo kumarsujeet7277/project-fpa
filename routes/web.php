@@ -56,3 +56,7 @@ Route::get('/sweet-alert', function(){
 Route::get('/drag-drop', function(){
     return view('drag-drop-table');
 });
+
+Route::get('/create-fly', function(){
+    return view('create-on-fly');
+});
