@@ -72,3 +72,8 @@ Route::get('/date-picker',function(){
 Route::get('/generate-password', function(){
     return view('generate-password-component');
 });
+
+
+Route::get('/password-strength', function(){
+    return view('password-strength-indicator');
+});

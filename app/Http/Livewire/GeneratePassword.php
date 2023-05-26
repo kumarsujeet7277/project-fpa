@@ -29,7 +29,7 @@ class GeneratePassword extends Component
         $digit = range(0, 9);
         $specialChar = ['!', '@', '#', '$', '%', '^', '&', '*'];
         $chars = array_merge($lowercase, $Uppercase, $digit, $specialChar);
-        $lenght = 8;
+        $lenght = 10;
 
         do{
             $password = array();
@@ -45,7 +45,7 @@ class GeneratePassword extends Component
         $this->setPasswords(implode('', $password));
     }
 
-    private function setPasswords($value): void
+    private function setPasswords($value): voi
     {
         $this->password = $value;
         $this->password_confirmation = $value;
