@@ -68,3 +68,7 @@ Route::get('/unique-dropdown', function(){
 Route::get('/date-picker',function(){
     return view('date-picker-pikaday');
 });
+
+Route::get('/generate-password', function(){
+    return view('generate-password-component');
+});
