@@ -64,3 +64,7 @@ Route::get('/create-fly', function(){
 Route::get('/unique-dropdown', function(){
     return view('unique-dropdown-component');
 });
+
+Route::get('/date-picker',function(){
+    return view('date-picker-pikaday');
+});
