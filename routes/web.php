@@ -77,3 +77,7 @@ Route::get('/generate-password', function(){
 Route::get('/password-strength', function(){
     return view('password-strength-indicator');
 });
+
+Route::get('/file-upload', function(){
+    return view('file-upload-filepond');
+});
