@@ -110,3 +110,8 @@ Route::get('/all-link', function(){
 Route::get('/all-component', function(){
     return view('all-component');
 });
+
+
+Route::get('/like-reaction-bookmark', function(){
+    return view('like-reaction-bookmark');
+})->name('like-reaction-bookmark');

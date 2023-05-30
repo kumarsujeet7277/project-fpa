@@ -153,6 +153,12 @@
                                             <a href="{{ route('posts') }}" class="btn btn-primary">click me</a>
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td>Like-Reaction-Bookmark</td>
+                                        <td>
+                                            <a href="{{ route('like-reaction-bookmark') }}" class="btn btn-primary">click me</a>
+                                        </td>
+                                    </tr>
                                     
                                 </tbody>
                             </table>
