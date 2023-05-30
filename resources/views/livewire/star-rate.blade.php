@@ -27,15 +27,15 @@
                                     <h3>Rate the post</h3>
 
                                     <div>
-                                    <a wire:click.prevent="rating(1)" wire:model="rating" href="#"><img src="http://demo-star-rating.livewirekit.com/img/star-inactive.png"
+                                    <a wire:click.prevent="rating(1)" wire:model.defer="rating" href="#"><img src="http://demo-star-rating.livewirekit.com/img/star-inactive.png"
                                                                             width="30"/></a>
-                                    <a wire:click.prevent="rating(2)" wire:model="rating" href="#"><img src="http://demo-star-rating.livewirekit.com/img/star-inactive.png"
+                                    <a wire:click.prevent="rating(2)" wire:model.defer="rating" href="#"><img src="http://demo-star-rating.livewirekit.com/img/star-inactive.png"
                                                                             width="30"/></a>
-                                    <a wire:click.prevent="rating(3)" wire:model="rating" href="#"><img src="http://demo-star-rating.livewirekit.com/img/star-inactive.png"
+                                    <a wire:click.prevent="rating(3)" wire:model.defer="rating" href="#"><img src="http://demo-star-rating.livewirekit.com/img/star-inactive.png"
                                                                             width="30"/></a>
-                                    <a wire:click.prevent="rating(4)" wire:model="rating" href="#"><img src="http://demo-star-rating.livewirekit.com/img/star-inactive.png"
+                                    <a wire:click.prevent="rating(4)" wire:model.defer="rating" href="#"><img src="http://demo-star-rating.livewirekit.com/img/star-inactive.png"
                                                                             width="30"/></a>
-                                    <a wire:click.prevent="rating(5)" wire:model="rating" href="#"><img src="http://demo-star-rating.livewirekit.com/img/star-inactive.png"
+                                    <a wire:click.prevent="rating(5)" wire:model.defer="rating" href="#"><img src="http://demo-star-rating.livewirekit.com/img/star-inactive.png"
                                                                             width="30"/></a>
                                
                         

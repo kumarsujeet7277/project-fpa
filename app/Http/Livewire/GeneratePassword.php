@@ -45,7 +45,7 @@ class GeneratePassword extends Component
         $this->setPasswords(implode('', $password));
     }
 
-    private function setPasswords($value): voi
+    private function setPasswords($value)
     {
         $this->password = $value;
         $this->password_confirmation = $value;

@@ -11,14 +11,10 @@
     <title>laravel-FPA</title>
 </head>
 <body>
-
-    <!-- @livewire('posts',[
-        'post_id' => \App\Models\Vote::find('post_id'),
-        'vote' => \App\Models\Vote::find('vote')
-        ]) -->
+ @livewire('companies') 
 
 
-    @livewire('multi-step')
+
 
 
     @livewireScripts

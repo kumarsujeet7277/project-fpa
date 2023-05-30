@@ -22,18 +22,21 @@ class StarRate extends Component
         $this->post = Post::find(5);
         //  dd($post);
 
-
+        $this->count = Rating::count();
        
         $post = Post::withCount('ratings')->latest('id')->first();
+
         foreach ($post->ratings as $rating) {
             $this->sum = $rating->rating; 
             $this->sum ++;
-            $this->count = $rating->count();
-            
+            $this->count = Rating::count();
+      
         }
-        $this->avgRating = $this->sum/$this->count;
-        $this->avgRating = $this->avgRating/5;
-        // dd($this->avgRating);
+        
+            $this->avgRating = $this->sum/$this->count;
+            $this->avgRating = $this->avgRating/5;
+            // dd($this->avgRating);
+       
     }
     public function render()
     {
