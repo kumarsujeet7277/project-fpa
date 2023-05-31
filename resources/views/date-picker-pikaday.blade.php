@@ -15,14 +15,14 @@
 
     @livewireStyles
 </head>
-<body>
+<body> 
     @livewire('date-picker')
     
 
 
     @livewireScripts
   
-    <!-- yield('script') -->
+    @yield('script')
 </body>
 </html>
 

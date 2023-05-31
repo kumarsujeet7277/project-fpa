@@ -25,7 +25,7 @@ class DatePicker extends Component
     }
 
     public function saveProject()
-    {
+    { 
         // dd($this->due_date);
         $this->validate();
         $project = new Project();

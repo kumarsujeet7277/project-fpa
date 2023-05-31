@@ -89,12 +89,15 @@ class LikeReaction extends Component
     {
         $this->post = Post::first();
         $this->like = Like::where('user_id', 2)->where('post_id', $this->post->id)->first();
-        if($this->like->like == true)
-        {
-            $this->like = $this->like->like;
-        }else{
-            $this->like = $this->like->like;
+        if(isset($this->like)){
+            if($this->like->like == true )
+            {
+                $this->like = $this->like->like;
+            }else{
+                $this->like = $this->like->like;
+            }
         }
+     
         $this->likeCount = Like::sum('like');
         // dd($this->post);
     }
